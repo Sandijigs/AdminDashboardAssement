@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# AlumUnite User Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ This  application allows the Admin  to view  all users profiles, add new users, and manage user information effectively. 
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Landing Page: Displays a list of user profiles with their  informations
+- User Management: Allow Proper management of users. Admin can   add new profiles or Delete
+- Profile Photo Upload: Users can upload profile photos with limited file types.
+- Local Data Storage: Saves user profiles locally using local storage to simulate persistent data storage.
+- Navigation Bar: Includes links to Home, Add User, and Manage User. for Easy Usage
 
-## Expanding the ESLint configuration
+# Tech Stack
+- React (Vite): Set up the project with Vite for fast development and optimized build.
+- React Router: Used for seamless navigation between pages (Home, Add User, Manage User).
+- Tailwind CSS: Provides a consistent and responsive design theme.
+- Ant Design: Utilized for reusable UI components.
+- React Icons: Adds icons to the UI for enhanced visual feedback.
+- Formik & Yup: Handles form state and input validation to ensure accurate user information.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Installation
+- ##### git clone https://github.com/yourusername/alumni-user-management.git
+- ##### cd alumni-user-management
+- ##### npm install
+- #####  npm run dev
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
