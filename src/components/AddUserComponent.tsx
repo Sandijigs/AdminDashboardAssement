@@ -16,7 +16,6 @@ const AddUserComponent = () => {
       .required("Email is required"),
     role: Yup.string().required("Role is required"),
     status: Yup.string().required("Status is required"),
-    // Profile photo validation in Yup schema
     profilePhoto: Yup.mixed()
       .required("Profile photo is required")
       .test("fileSize", "File too large", (value) => {
@@ -47,7 +46,6 @@ const AddUserComponent = () => {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log("Form data:", values);
       handleFormSubmit(values);
     },
   });

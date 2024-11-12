@@ -59,7 +59,6 @@ const AddUserModal = ({
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log("Form data:", values);
       handleFormSubmit(values);
     },
   });

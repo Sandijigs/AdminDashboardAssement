@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { Pagination } from "antd";
 import UserProfile from "../components/UserProfile";
 import { User } from "../interfaces/User";
 import mockData from "../../utils/mockData.json";
@@ -67,14 +66,6 @@ const Home = () => {
       );
     }
   };
-
-  // Pagination logic: calculate the users to display on the current page
-  // const indexOfLastUser = page * perPage;
-  // console.log("index of last user", indexOfLastUser);
-  // const indexOfFirstUser = indexOfLastUser - perPage;
-  // console.log("index of first user", indexOfFirstUser);
-  // const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
-  // console.log("current usere her ", currentUsers);
 
   return (
     <div className="w-full h-full mb-5 md:mb-0 font-sans">
