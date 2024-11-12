@@ -19,7 +19,7 @@
 - Formik & Yup: Handles form state and input validation to ensure accurate user information.
 
 # Installation
-- ##### git clone https://github.com/yourusername/alumni-user-management.git
+- ##### git clone https://github.com/Sandijigs/alumni-user-management.git
 - ##### cd alumni-user-management
 - ##### npm install
 - #####  npm run dev
